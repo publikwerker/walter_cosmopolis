@@ -1,12 +1,11 @@
 import React from 'react';
 import Footer from './Footer';
+import Header from './Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      The world-famous entertainer, Walter Cosmopolis!
-      </header>
+    <Header />
       <body>
         <h2>Walter Cosmopolis is world-famous for good reason!</h2>
       </body>
