@@ -46,3 +46,69 @@ code {
 
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 }
+
+.header-title {
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+}
+
+.header-title-left {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 5px;
+
+  animation: moveInRight 2s ease-in-out;
+}
+
+.header-title-right {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 15px;
+
+  animation: moveInLeft 2s ease-in-out;
+}
+
+.text-box {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
