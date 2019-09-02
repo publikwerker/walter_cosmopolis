@@ -23,10 +23,10 @@ export default class Header extends React.Component {
     return (
       <header className="header">
       <div class="header--text-box"> 
-        <hi class="header--title">
+        <h1 class="header--title">
           <span class="header--title-left">The world-famous entertainer, </span>
-          <span class="header--title-right"> Walter Cosmopolis!</span>
-        </hi>
+          <span class="header--title-right">Walter Cosmopolis!</span>
+        </h1>
       </div>
       </header>
 
