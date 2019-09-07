@@ -1,0 +1,10 @@
+.about {
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba($color-white, 0.799), rgba($color-blue-light, 0.799)), url(../src/images/Nightlife-1.jpg);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}

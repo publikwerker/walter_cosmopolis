@@ -2,7 +2,7 @@
   align-items: center;
   justify-content: center;
   height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba($color-white, 0.799), rgba($color-blue-light, 0.799)), url(./images/film_still.JPG);
+  background-image: linear-gradient(to right bottom, rgba($color-white, 0.799), rgba($color-blue-light, 0.799)), url(./images/Maestro-Walter-1.JPG);
   background-size: cover;
   background-position: top;
 
@@ -32,7 +32,7 @@
       text-align: right;
       width: 50%;
     
-      animation: moveInRight 2s 1s ease-out;
+      animation: moveInRight 2s ease-out;
     }
     
     &-right {
@@ -43,7 +43,7 @@
       text-align: left;
       width: 50%;
 
-      animation: moveInLeft 2s 2s ease-out;
+      animation: moveInLeft 3s ease-out;
     }
   }
 }
