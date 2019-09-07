@@ -1,0 +1,49 @@
+.header {  
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba($color-white, 0.799), rgba($color-blue-light, 0.799)), url(./images/film_still.JPG);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+  &__text-box {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    width: 100%;
+    color: $color-white;
+    text-transform: uppercase;
+  
+    // prevents flicker at end of animation
+    backface-visibility: hidden;
+
+    &-left {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: .5rem;
+      text-align: right;
+      width: 50%;
+    
+      animation: moveInRight 2s 1s ease-out;
+    }
+    
+    &-right {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing: 1.5rem;
+      text-align: left;
+      width: 50%;
+
+      animation: moveInLeft 2s 2s ease-out;
+    }
+  }
+}

@@ -22,10 +22,10 @@ export default class Header extends React.Component {
   render () {
     return (
       <header className="header">
-      <div class="header--text-box"> 
-        <h1 class="header--title">
-          <span class="header--title-left">The world-famous entertainer, </span>
-          <span class="header--title-right">Walter Cosmopolis!</span>
+      <div class="header__text-box"> 
+        <h1 class="header__title">
+          <span class="header__title-left">The world-famous entertainer, </span>
+          <span class="header__title-right">Walter Cosmopolis!</span>
         </h1>
       </div>
       </header>
