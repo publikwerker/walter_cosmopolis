@@ -4,13 +4,13 @@ import Header from './Header';
 
 function App() {
   return (
-    <div className="App">
-    <Header />
-      <body>
-        <h2 class="about__title">Walter Cosmopolis is world-famous for good reason!</h2>
+    <div className="app">
+      <Header />
+      <main>
+        <h2 className="about__title">Walter Cosmopolis is world-famous for good reason!</h2>
         <section className="about">
         </section>
-      </body>
+      </main>
       <Footer />
     </div>
   );
