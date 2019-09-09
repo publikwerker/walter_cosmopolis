@@ -57,7 +57,7 @@ html {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
   .header__logo {
-    height: 3.5rem; }
+    height: 5rem; }
     .header__logo-box {
       position: absolute;
       top: 4rem;
