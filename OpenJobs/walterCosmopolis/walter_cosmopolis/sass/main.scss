@@ -1,7 +1,9 @@
-@import '_variables.scss';
+@import 'abstracts/mixins';
+@import 'abstracts/_variables.scss';
 @import '_animations.scss';
 @import '_base.scss';
 @import 'components/about';
 @import 'components/footer';
 @import 'components/header';
+@import 'layout/grid';
 @import '_typography.scss';
