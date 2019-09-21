@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../src/images/logo.png';
+import logo from '../../src/images/logo.png';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export default class Header extends React.Component {
 
         <div className="header__text-box"> 
           <h1 className="header__title">
-            <span className="header__title-left">The world-famous entertainer, </span>
+            <span className="header__title-left">The world-famous entertainer</span>
             <span className="header__title-right">Walter Cosmopolis!</span>
           </h1>
         </div>
