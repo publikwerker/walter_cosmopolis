@@ -17,6 +17,15 @@ code {
     monospace;
 }
 
+.footer--text {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 3rem;
+  color: $color-white;
+  margin: 0 auto;
+}
+
 html {
   font-size: 62.5%;
 }

@@ -22,6 +22,7 @@
 
   .col-1-of-3 {
     width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+    min-width: 20rem;
   }
 
   .col-2-of-3 {

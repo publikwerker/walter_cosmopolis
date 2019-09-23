@@ -67,8 +67,107 @@ html {
     color: transparent;
     letter-spacing: .2rem; }
 
+.card {
+  min-width: 20rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 32rem; }
+  .card__side {
+    height: 32rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(54, 54, 54, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      background-color: orangered;
+      transform: rotateY(-180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #fff, #819cf3); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #fff, #819cf3); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #fff, #819cf3); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 28rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card__picture--1 {
+      background-image: url(./images/Wonder_Walter_1.jpg);
+      transform: translateX(-2rem); }
+    .card__picture--2 {
+      background-image: url(./images/Wonder_Walter_3.jpg);
+      transform: translateX(-2rem); }
+    .card__picture--3 {
+      background-image: url(./images/Wonder_Walter_5.jpg);
+      transform: translateX(-2rem); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 65%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(129, 156, 243, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(129, 156, 243, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(129, 156, 243, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #777; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+
 .footer {
-  align-items: center;
+  text-align: center;
   justify-content: center;
   height: 90vh;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.799), rgba(129, 156, 243, 0.799)), url(../src/images/Nightlife-1.jpg);
@@ -76,13 +175,6 @@ html {
   background-position: top;
   position: relative;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); }
-  .footer--text {
-    display: inline-block;
-    position: absolute;
-    bottom: 3rem;
-    left: calc(50vw - 21.5rem);
-    color: #fff;
-    margin: 0 auto; }
 
 .header {
   align-items: center;
@@ -109,6 +201,14 @@ html {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.section-outreach {
+  background-color: #ddd;
+  padding: 25rem 0 15rem;
+  margin-top: -12rem;
+  min-height: 90rem;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -125,7 +225,8 @@ html {
   .row .col-1-of-2 {
     width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
-    width: calc((100% - (6rem * 2)) / 3); }
+    width: calc((100% - (6rem * 2)) / 3);
+    min-width: 20rem; }
   .row .col-2-of-3 {
     width: calc(100% - 6rem - (100% - (6rem * 2)) / 3); }
   .row .col-1-of-4 {
@@ -147,6 +248,14 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+.footer--text {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 3rem;
+  color: #fff;
+  margin: 0 auto; }
 
 html {
   font-size: 62.5%; }

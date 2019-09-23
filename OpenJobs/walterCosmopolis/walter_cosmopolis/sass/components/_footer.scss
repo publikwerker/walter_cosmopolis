@@ -1,5 +1,5 @@
 .footer {  
-  align-items: center;
+  text-align: center;
   justify-content: center;
   height: 90vh;
   background-image: linear-gradient(to right bottom, rgba($color-white, 0.799), rgba($color-blue-light, 0.799)), url(../src/images/Nightlife-1.jpg);
@@ -8,13 +8,4 @@
   position: relative;
 
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); 
-
-  &--text {
-    display: inline-block;
-    position: absolute;
-    bottom: 3rem;
-    left: calc(50vw - 21.5rem);
-    color: $color-white;
-    margin: 0 auto;
-  }
 }
