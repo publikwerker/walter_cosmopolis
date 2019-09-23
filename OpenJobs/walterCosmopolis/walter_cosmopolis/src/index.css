@@ -174,7 +174,8 @@ html {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); }
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
 
 .header {
   align-items: center;
@@ -185,8 +186,8 @@ html {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .header__logo {
     height: 5rem; }
   .header__logo-box {
@@ -203,11 +204,26 @@ html {
 
 .section-outreach {
   background-color: #ddd;
-  padding: 25rem 0 15rem;
+  padding: 15rem 0 15rem;
   margin-top: -12rem;
-  min-height: 90rem;
-  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%); }
+  min-height: 90vh;
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+  -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%); }
+
+@media only screen and (min-width: 490px) {
+  .section-outreach {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); } }
+
+@media only screen and (min-width: 686px) {
+  .section-outreach {
+    clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
+    -webkit-clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%); } }
+
+@media only screen and (min-width: 752px) {
+  .section-outreach {
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); } }
 
 .row {
   max-width: 114rem;
