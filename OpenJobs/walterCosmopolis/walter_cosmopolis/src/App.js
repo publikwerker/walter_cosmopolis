@@ -3,6 +3,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Outreach from './components/Outreach';
+import Performance from './components/Performance';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
         <About />
         <Outreach />
+        <Performance />
       </main>
       <Footer />
     </div>
