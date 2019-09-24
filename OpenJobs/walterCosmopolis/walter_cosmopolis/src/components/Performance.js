@@ -12,6 +12,7 @@ export default class Performance extends React.Component {
             Your Browser is not Supported!
           </video>
         </div>  
+        <h2 className=" heading-primary performance__title">Walter Cosmopolis is a man of many talents!</h2>
       </section>)
   }
 }

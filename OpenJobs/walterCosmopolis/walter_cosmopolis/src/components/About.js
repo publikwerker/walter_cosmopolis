@@ -3,7 +3,7 @@ import React from 'react';
 export default function About() {
   return (
     <section className="section-about">
-      <h2 className=" heading-primary about__title">Walter Cosmopolis is world-famous for good reason!</h2>
+      <h2 className=" heading-primary about__title">Proven Leadership by Example. Walter Walks the Walk</h2>
       <div className="row">
         <div className="col-1-of-2">
           <h3 className="heading-tertiary">Walter Fights for Truth and Justice</h3>
