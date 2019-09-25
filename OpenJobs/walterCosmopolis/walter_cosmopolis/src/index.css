@@ -222,12 +222,11 @@ html {
     clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); } }
 
-.section-perfomance {
-  background-color: #ddd;
+.section-performance {
   padding: 15rem 0;
-  margin-top: -12rem;
   min-height: 90vh;
   position: relative;
+  background-blend-mode: screen;
   clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
   -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%); }
 
@@ -235,6 +234,11 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #ddd, #819cf3); }
+
+.bg-video__content {
   height: 100%;
   width: 100%; }
 
