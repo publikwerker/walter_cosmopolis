@@ -46,6 +46,7 @@
   box-sizing: inherit; }
 
 .app {
+  width: 90vw;
   background-attachment: fixed;
   position: relative;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.799), rgba(129, 156, 243, 0.799)), url(../src/images/Wonder_Walter_4.jpg);
@@ -59,11 +60,16 @@ body {
 html {
   padding: 1rem; }
 
-.about {
+.section-about {
   align-items: center;
   justify-content: center;
-  height: 90vh; }
-  .about__title {
+  background-color: #fff;
+  padding: 15rem 0 15rem;
+  margin-top: -12rem;
+  min-height: 90vh;
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+  -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%); }
+  .section-about__title {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -73,6 +79,21 @@ html {
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: .2rem; }
+
+@media only screen and (min-width: 490px) {
+  .section-about {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); } }
+
+@media only screen and (min-width: 686px) {
+  .section-about {
+    clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
+    -webkit-clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%); } }
+
+@media only screen and (min-width: 752px) {
+  .section-about {
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); } }
 
 .card {
   min-width: 30rem;
@@ -228,7 +249,6 @@ html {
     -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); } }
 
 .section-performance {
-  padding: 15rem 0;
   min-height: 90vh;
   position: relative;
   background-blend-mode: screen;

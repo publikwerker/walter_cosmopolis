@@ -1,7 +1,12 @@
-.about {
+.section-about {
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  background-color: $color-white;  padding: 15rem 0 15rem;
+  margin-top: -12rem;
+  min-height: 90vh;
+
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+  -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
 
   &__title {
     font-size: 3.5rem;
@@ -13,5 +18,29 @@
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
+  }
+}
+
+@media only screen and (min-width: 490px){
+  .section-about {
+
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  }
+}
+
+@media only screen and (min-width: 686px){
+  .section-about {
+
+  clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
+  -webkit-clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
+  }
+}
+
+@media only screen and (min-width: 752px){
+  .section-about {
+
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   }
 }
