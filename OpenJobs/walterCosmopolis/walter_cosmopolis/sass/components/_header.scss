@@ -3,9 +3,7 @@
   justify-content: center;
   height: 90vh;
   border-radius: 3px;
-  background-image: linear-gradient(to right bottom, rgba($color-white, 0.799), rgba($color-blue-light, 0.799)), url(../src/images/Wonder_Walter_4.jpg);
-  background-size: cover;
-  background-position: top;
+  background-color: transparent;
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);

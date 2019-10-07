@@ -45,6 +45,13 @@
   padding: 0;
   box-sizing: inherit; }
 
+.app {
+  background-attachment: fixed;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.799), rgba(129, 156, 243, 0.799)), url(../src/images/Wonder_Walter_4.jpg);
+  background-size: cover;
+  background-position: top; }
+
 body {
   box-sizing: border-box;
   min-height: 25vh; }
@@ -179,9 +186,7 @@ html {
   justify-content: center;
   height: 90vh;
   border-radius: 3px;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.799), rgba(129, 156, 243, 0.799)), url(../src/images/Wonder_Walter_4.jpg);
-  background-size: cover;
-  background-position: top;
+  background-color: transparent;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
