@@ -1,7 +1,7 @@
 .section-performance {
   min-height: 90vh;
   position: relative;
-  background-blend-mode: screen; 
+  margin-top: -12rem;
 
   clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
   -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
@@ -22,7 +22,7 @@
 }
 
 @media only screen and (min-width: 490px){
-  .section-outreach {
+  .section-performance {
 
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -30,7 +30,7 @@
 }
 
 @media only screen and (min-width: 686px){
-  .section-outreach {
+  .section-performance {
 
   clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
   -webkit-clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
@@ -38,7 +38,7 @@
 }
 
 @media only screen and (min-width: 752px){
-  .section-outreach {
+  .section-performance {
 
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
