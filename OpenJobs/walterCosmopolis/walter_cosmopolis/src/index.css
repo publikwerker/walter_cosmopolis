@@ -110,8 +110,7 @@ html {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(54, 54, 54, 0.15); }
+    overflow: hidden; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -242,14 +241,16 @@ html {
     text-align: center; }
 
 .section-outreach {
-  background-color: #ddd;
-  padding: 15rem 0 15rem;
+  padding: 15rem 0 12rem;
   margin-top: -12rem;
+  background-color: #fff;
   min-height: 90vh;
   clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
   -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%); }
 
 @media only screen and (min-width: 490px) {
+  .card__side {
+    box-shadow: 0 1.5rem 4rem rgba(54, 54, 54, 0.15); }
   .section-outreach {
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); } }
@@ -268,6 +269,7 @@ html {
   min-height: 90vh;
   position: relative;
   margin-top: -12rem;
+  background-color: #fff;
   clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
   -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%); }
 
@@ -300,7 +302,8 @@ html {
 
 .row {
   max-width: 114rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: transparent; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
