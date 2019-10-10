@@ -3,7 +3,7 @@ import React from 'react';
 export default function Outreach() {
   return (
     <section className="section-outreach">
-      <h2 className=" heading-primary about__title">Walter Cosmopolis is world-famous for good reason!</h2>
+      <h2 className=" heading-secondary about__title">Walter Cosmopolis is world-famous for good reason!</h2>
       <div className="row">
 
         <div className="col-1-of-3">
